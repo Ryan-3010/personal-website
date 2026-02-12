@@ -1,11 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
+<!-- Declares this as an HTML5 document -->
+
 <html lang="en">
+<!-- Root element of the page. lang="en" tells browsers the content is in English -->
+
 <head>
-  <meta charset="utf-8">
-  <title>Redirecting…</title>
-  <meta http-equiv="refresh" content="0; url=submission/views/home.html">
-  <link rel="canonical" href="submission/views/home.html">
+  <!-- Head section contains metadata and links to external resources (not visible on page) -->
+  
+  <meta charset="utf-8" />
+  <!-- Sets character encoding to UTF-8, which supports all languages and special characters -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Makes the site responsive on mobile devices by setting viewport width to device width -->
+  
+  <title>Ryan Falender</title>
+  <!-- Text that appears in the browser tab -->
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <!-- Links to Bootstrap CSS framework from a CDN (Content Delivery Network) -->
+  <!-- Bootstrap provides pre-built styles and components for faster web development -->
+  <!-- integrity and crossorigin attributes ensure the file hasn't been tampered with -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../resources/css/style.css" />
+
 </head>
+
 <body>
+  <!-- Body section contains all visible content on the page -->
+
+  <!-- Navigation Bar Section -->
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ryan Falender</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+      </ul>
+      </ul>
+      <span class="navbar-text">
+      
+      </span>
+      <a class="navbar-brand" href="#">
+            <!-- Brand link, usually contains logo and/or site name -->
+            
+            <img 
+              src="../resources/img/logo.png" 
+              alt="Site Logo" 
+              width="58" 
+              height="52" 
+              class="d-inline-block align-text-top"
+            />
+            <!-- Logo image (you'll want to replace this path with your own logo) -->
+            <!-- alt: describes image for screen readers and when image doesn't load -->
+            <!-- d-inline-block: makes image display inline with text -->
+            <!-- align-text-top: aligns image with top of text -->
+            <!-- Brand text next to logo -->
+          </a>
+    </div>
+  </div>
+</nav>
+
+     
+  <!-- Main Content Section -->
+<div class="container my-5">
+  <div class="row align-items-center">
+
+    <!-- Image Column -->
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+      <img
+        src="../resources/img/HomePage.png"
+        class="img-fluid rounded shadow"
+        alt="Profile photo of Ryan Falender"
+      />
+    </div>
+
+    <!-- Text Column -->
+    <div class="col-md-8">
+      <h2 class="mb-3">Ryan Falender</h2>
+
+      <p class="lead">
+        Third-year Dean’s Leadership Fellow and Honors student at the University of Colorado Boulder’s
+        Leeds School of Business, majoring in Finance with a minor in Computer Science.
+      </p>
+
+      <p>
+        Ryan is deeply curious about financial markets, risk management, and strategic investment
+        decision-making, while also exploring how machine learning and coding can solve complex problems.
+        He currently serves as Vice Chairman of the Finance Board in CU Student Government, overseeing
+        a ~$33 million budget impacting over 30,000 students.
+      </p>
+
+      <p>
+        Outside the classroom, Ryan is a volunteer head coach, practice player for the CU Women’s
+        Basketball team, and an avid mountaineer and skier pursuing all of Colorado’s 14,000-foot peaks.
+      </p>
+
+      <a href="resume.html" class="btn btn-primary mt-3">
+        View Resume
+      </a>
+    </div>
+
+  </div>
+</div>
+<footer class="bg-body-tertiary text-center py-4 mt-5">
+    <div class="container">
+
+        <p class="mb-2">Connect With Me</p>
+
+        <a href="https://www.linkedin.com/in/ryan-falender/" target="_blank">
+        <img
+            src="../resources/img/linkedin.png"
+            alt="LinkedIn"
+            width="32"
+            height="32"
+            class="mx-2"
+        />
+        </a>
+
+        <p class="mt-3 mb-0 small">
+        © 2026 Ryan Falender
+        </p>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Links to Bootstrap JavaScript from CDN -->
+  <!-- Required for interactive components like dropdowns, modals, and the collapse menu -->
+  <!-- Placed at end of body so page content loads before scripts -->
 </body>
+
 </html>
+
