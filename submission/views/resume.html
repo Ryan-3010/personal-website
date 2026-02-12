@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!-- Declares this as an HTML5 document -->
+
+<html lang="en">
+<!-- Root element of the page. lang="en" tells browsers the content is in English -->
+
+<head>
+  <!-- Head section contains metadata and links to external resources (not visible on page) -->
+  
+  <meta charset="utf-8" />
+  <!-- Sets character encoding to UTF-8, which supports all languages and special characters -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Makes the site responsive on mobile devices by setting viewport width to device width -->
+  
+  <title>Ryan Falender</title>
+  <!-- Text that appears in the browser tab -->
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <!-- Links to Bootstrap CSS framework from a CDN (Content Delivery Network) -->
+  <!-- Bootstrap provides pre-built styles and components for faster web development -->
+  <!-- integrity and crossorigin attributes ensure the file hasn't been tampered with -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../resources/css/style.css" />
+
+</head>
+
+
+
+<body>
+  <!-- Body section contains all visible content on the page -->
+
+  <!-- Navigation Bar Section -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ryan Falender</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+      </ul>
+      </ul>
+      <span class="navbar-text">
+      
+      </span>
+      <a class="navbar-brand" href="#">
+            <!-- Brand link, usually contains logo and/or site name -->
+            
+            <img 
+              src="../resources/img/logo.png" 
+              alt="Site Logo" 
+              width="58" 
+              height="52" 
+              class="d-inline-block align-text-top"
+            />
+            <!-- alt: describes image for screen readers and when image doesn't load -->
+            <!-- d-inline-block: makes image display inline with text -->
+            <!-- align-text-top: aligns image with top of text -->
+          </a>
+    </div>
+  </div>
+</nav>
+
+     
+  <!-- Main Content Section -->
+<!-- Main Content Section -->
+<!-- The <main> tag represents the main content of the page -->
+<main>
+  
+  <!-- Header Section -->
+  <!-- The <header> tag is used for introductory content, like your name and contact info -->
+ <!-- Main Content Section -->
+<!-- Header Section -->
+  <!-- The <header> tag is used for introductory content, like your name and contact info -->
+  <header class="resume-header">
+    <!-- <h1> is the largest heading tag (h1-h6 available, h1 being most important) -->
+    <h1>Ryan Falender</h1>
+    
+    <!-- <p> is a paragraph tag - used for blocks of text -->
+    <p class="contact-info">
+      <!-- <span> is an inline container - doesn't create line breaks -->
+      <span>Boulder, CO</span>
+      <span>|</span>
+      <span>719-331-6030</span>
+      <span>|</span>
+      <span>Ryan.Falender@colorado.edu</span>
+      <span>|</span>
+      <!-- <a> is an anchor tag - creates clickable links -->
+      <!-- href attribute specifies the URL to link to -->
+      <!-- target="_blank" opens link in new tab -->
+      <a href="https://www.linkedin.com/in/ryan-falender" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <!-- Education Section -->
+  <!-- <section> tag defines a section of related content -->
+  <section class="resume-section">
+    <!-- <h2> is a second-level heading, smaller than h1 -->
+    <h2>EDUCATION</h2>
+    
+    <!-- <hr> creates a horizontal line (hr = horizontal rule) -->
+    <hr>
+    
+    <!-- <table> creates a table structure -->
+    <!-- border="0" means no visible border (can style with CSS instead) -->
+    <!-- cellpadding adds space inside cells -->
+    <!-- cellspacing adds space between cells -->
+    <table class="resume-table">
+      <!-- <tbody> contains the body rows of the table -->
+      <tbody>
+        <!-- <tr> is a table row -->
+        <tr>
+          <!-- <td> is a table data cell -->
+          <!-- colspan="2" makes this cell span across 2 columns -->
+          <td colspan="2">
+            <h3>University of Colorado at Boulder, Leeds School of Business</h3>
+          </td>
+          <!-- This cell contains the date, aligned to the right -->
+          <td class="date-cell">Expected May 2027</td>
+        </tr>
+        
+        <tr>
+          <td colspan="3">
+            <p><strong>B.S. in Business Administration with an Emphasis in Finance</strong></p>
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="3">
+            <p>Minor in Computer Science and Certificate in Quantitative Finance</p>
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="3">
+            <p>Cumulative GPA 3.95 | Dean's List All Eligible Semesters</p>
+          </td>
+        </tr>
+        
+        <tr>
+          <!-- Empty cell for indentation -->
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            <strong>Relevant Coursework:</strong> Microeconomics, Macroeconomics, Computer Science Data Structures, Linear Algebra, Accounting 1
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            <strong>Training the Street:</strong> Rigorous financial statement Excel modeling and financial statement analysis seminar
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            <strong>Involvement:</strong> Peer Mentor, Academic Tutor, Herd Leadership Council, CU Football Equipment Manager, CU Quants, CU Freeski Team, CFL Leadership Coaching, CU Women's Basketball Practice Squad
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="3">
+            <h4>Leeds Honors Program and Dean's Leadership Fellows</h4>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Selected for a cohort of high achieving students to engage in advanced coursework, international experiences, and professional development with the Associate Dean
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="resume-section">
+    <h2>WORK EXPERIENCE</h2>
+    <hr>
+    
+    <!-- Table for SDR Ventures -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>IB Analyst Intern</h3>
+          </td>
+          <td class="date-cell">January 2026 - May 2026</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Incoming Spring 2025 Investment Banking Intern at SDR Ventures | Denver, CO
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Gloo -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>FP&A and Corp Development Intern</h3>
+          </td>
+          <td class="date-cell">June 2025 - August 2025</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Gloo | Boulder, CO
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Built structured integration frameworks across Excel, Asana, Pitchbooks, Planful, Grata, and Google Drive, accelerating onboarding efficiency while ensuring high data accuracy during company mergers and partnerships
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Streamlined accounting workflows by improving balance sheet consolidations and cross-entity eliminations, accelerating integration timelines to support the firm's goal of one deal per month
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Enhanced Excel proficiency using pivot tables, VLOOKUPs, filters, and formulas to build detailed analytical reports
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Developed strong financial modeling skills by supporting FP&A projections and conducting DCF reviews with Corp Dev team
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Baird Holdings -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>Real Estate Sales Intern</h3>
+          </td>
+          <td class="date-cell">June 2025 - August 2025</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Baird Holdings | Boulder, CO
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Generated $10M+ in new business pipeline through cold lead sourcing and outreach, significantly expanding firm market reach
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Gained hands-on transaction experience by conducting property valuations, supporting due diligence, and assisting in deal structuring through to closing
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Rallyday Partners -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>Portfolio Operations Intern</h3>
+          </td>
+          <td class="date-cell">January 2025 - April 2025</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Rallyday Partners | Denver, CO
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Enhanced 6 digital modules by integrating interactive infographics, reflective exercises, and improved video delivery; collaborated with firm leadership and instructional designers using articulate to ensure high engagement and usability
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Glass Lake Holdings -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>Private Equity Intern (Search Fund)</h3>
+          </td>
+          <td class="date-cell">August 2024 - December 2024</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Glass Lake Holdings | Remote
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Screened CIMs and built Excel analyses to evaluate company performance, valuation, and acquisition potential
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Conducted industry and company research using HubSpot, Grata, and other tools to support due diligence and investment recommendations
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Leadership and Activities Section -->
+  <section class="resume-section">
+    <h2>LEADERSHIP AND ACTIVITIES</h2>
+    <hr>
+    
+    <!-- Table for CU Student Government -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>Vice Chair</h3>
+          </td>
+          <td class="date-cell">August 2024 - Present</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            CU Student Government Finance Board | Boulder, CO
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Met with organization administrators to review quarterly reports, identify budget issues, clarify fund allocations, and advise multimillion-dollar project implementations
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Reviewed and recommended annual budget requests to CUSG Legislative Council, influencing allocation of $32M+ in student fees
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Startup Summer -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>CEO & Co-Founder, BUILDJOY</h3>
+          </td>
+          <td class="date-cell">June 2025 - August 2025</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Startup Summer | Boulder, CO
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Founded BUILDJOY, a startup leveraging AI to design custom LEGO sets; developed the business model, product concept, and collaborated with an engineer to build the prototype
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Delivered a professional pitch to an audience of 180+ investors, entrepreneurs, and peers, secured 3rd place in the competition
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Completed an intensive 8-week accelerator, gaining hands-on experience in pitching, fundraising, customer discovery, and iterative business model development
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Leeds Investment Banking Club -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>Selected Member</h3>
+          </td>
+          <td class="date-cell">September 2024 - May 2025</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Leeds Investment Banking Club | Boulder, CO
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Selective club preparing students for investment banking recruitment by teaching and in-depth technical and interview skills
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Built a 3 Statement Model, Discounted Cash Flow, and a Comparable Company Analysis for Spotify Technology
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Table for Scholars of Finance -->
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>President & Executive VP & VP of Leadership Development</h3>
+          </td>
+          <td class="date-cell">December 2023 - May 2025</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="company-cell">
+            Scholars of Finance | Boulder, CO
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Drove chapter growth and professional development, managing 80+ members and sending 9 members to LA Leadership Conference
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Taught a 7-week leadership development program of 15 students, helping peers apply their own core values to finance
+          </td>
+        </tr>
+        <tr>
+          <td class="bullet-cell">•</td>
+          <td colspan="2">
+            Doubled applicants, grew chapter 91%, launched professional development programs, and organized 5+ events
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="resume-section">
+    <h2>SKILLS, INTERESTS, AND OTHER ACTIVITIES</h2>
+    <hr>
+    
+    <table class="resume-table">
+      <tbody>
+        <tr>
+          <td>
+            <p><strong>Skills:</strong> Limited Working Proficiency in Spanish, Excel, C++, Python, and PowerPoint, Financial Modeling (Training the Street)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Interests:</strong> Coaching basketball, backcountry ski certified, 5.7 golf handicap, LEGO builder, Colorado 14er climber</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+
+    <footer class="bg-body-tertiary text-center py-4 mt-5">
+    <div class="container">
+
+        <p class="mb-2">Connect With Me</p>
+
+        <a href="https://www.linkedin.com/in/ryan-falender/" target="_blank">
+        <img
+            src="../resources/img/linkedin.png"
+            alt="LinkedIn"
+            width="32"
+            height="32"
+            class="mx-2"
+        />
+        </a>
+
+        <p class="mt-3 mb-0 small">
+        © 2026 Ryan Falender
+        </p>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Links to Bootstrap JavaScript from CDN -->
+  <!-- Required for interactive components like dropdowns, modals, and the collapse menu -->
+  <!-- Placed at end of body so page content loads before scripts -->
+</body>
+
+</html>
+
+
+    <footer class="bg-body-tertiary text-center py-4 mt-5">
+    <div class="container">
+
+        <p class="mb-2">Connect With Me</p>
+
+        <a href="https://www.linkedin.com/in/ryan-falender/" target="_blank">
+        <img
+            src="../resources/img/linkedin.png"
+            alt="LinkedIn"
+            width="32"
+            height="32"
+            class="mx-2"
+        />
+        </a>
+
+        <p class="mt-3 mb-0 small">
+        © 2026 Ryan Falender
+        </p>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Links to Bootstrap JavaScript from CDN -->
+  <!-- Required for interactive components like dropdowns, modals, and the collapse menu -->
+  <!-- Placed at end of body so page content loads before scripts -->
+</body>
+
+</html>
+
+
+
+<!--
+
+Make a simpler html body code version of this resume, adding basic styling elements and 
+adding comments to explain what each html element is doing so that I can learn as much as possible about 
+how to do it. Keep it to elemnts that are not super complex.
+
+I used this prompt in Claude Sonnet 4.5 to help me generate the body code for the resume that I currently
+have professionally formatted. After that, I went back and adjusted elements to my liking to learn what I like
+and what I do not. I also had claude comment the code for the sake of my own learning and reference as I continue
+to write in html and css. I would have kept it more simpler by myself, but I wanted a professional looking resume
+and I wanted to see how to implement these elements in order to do it on my other pages eventually.
+
+THe majority of the initail output remains intact in my body section.
+
+
+-->
